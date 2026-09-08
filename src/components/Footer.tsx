@@ -19,7 +19,7 @@ export function Footer() {
                 <Link to="/" className="flex items-center space-x-2">
                   <img
                     src="/LOGO.png"
-                    alt="Revera Forte Auto"
+                    alt="Global SAM Soultions"
                     className="h-16 w-auto sm:h-20 md:h-24 lg:h-28"
                   />
                 </Link>
@@ -60,18 +60,18 @@ export function Footer() {
             <h3 className="text-lg font-semibold">Contact Us</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="mailto:info@reveraforteauto.com" className="hover:text-blue-400">
-                  info@reveraforteauto.com
+                <a href="mailto:info@globalsamsol.com" className="hover:text-blue-400">
+                  info@globalsamsol.com
                 </a>
               </li>
               <li>
                 <a href="tel:+13612039170" className="not-italic hover:text-blue-400 hover:underline cursor-pointer">
-                  +1 (361) 203-9170
+                  +91 879 239 4870
                 </a>
               </li>
               <li>
                 <address className="not-italic hover:text-blue-400">
-                  1309 Coffeen Ave, Ste 1200, Sheridan, WY 82801
+                  1309 Coffeen Avenue STE 20455 Sheridan Wyoming 82801
                 </address>
               </li>
             </ul>
@@ -82,7 +82,7 @@ export function Footer() {
         {/* Footer Bottom Section */}
         <div className="mt-12 border-t border-gray-800 pt-8 text-center">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Revera Forte Auto. All rights reserved.
+            © {new Date().getFullYear()} Global SAM Soultions. All rights reserved.
           </p>
         </div>
       </div>

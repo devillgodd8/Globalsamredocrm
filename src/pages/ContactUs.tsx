@@ -22,7 +22,7 @@ export function ContactUs() {
             </p>
           </div>
         </div>
-        
+
         {/* Decorative elements */}
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-blue-300/20 rounded-full blur-2xl"></div>
@@ -46,7 +46,7 @@ export function ContactUs() {
                   <Phone className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Walk In/ Call Us</h3>
-                <a href="tel:+13612039170" className="text-blue-600 font-semibold text-lg mb-2 block hover:underline cursor-pointer">+1 (361) 203-9170</a>
+                <a href="tel:+13612039170" className="text-blue-600 font-semibold text-lg mb-2 block hover:underline cursor-pointer">+91 879 239 4870</a>
                 <p className="text-gray-600 text-sm mb-1">Monday - Friday</p>
                 <p className="text-gray-600 text-sm">9:00 AM - 5:00 PM EST</p>
               </div>
@@ -59,7 +59,7 @@ export function ContactUs() {
                   <Mail className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Email Us</h3>
-                <p className="text-green-600 font-semibold text-lg mb-2">info@reveraforteauto.com</p>
+                <p className="text-green-600 font-semibold text-lg mb-2">info@globalsamsol.com</p>
                 <p className="text-gray-600 text-sm mb-1">Response within 24 hours</p>
                 <p className="text-gray-600 text-sm">Detailed inquiries welcome</p>
               </div>
@@ -72,7 +72,7 @@ export function ContactUs() {
                   <MapPin className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Visit Us</h3>
-                <p className="text-purple-600 font-semibold mb-2">1309 Coffeen Ave, Ste 1200</p>
+                <p className="text-purple-600 font-semibold mb-2">1309 Coffeen Avenue STE 20455</p>
                 <p className="text-gray-600 text-sm mb-1">Sheridan, WY 82801</p>
                 <p className="text-gray-600 text-sm">By appointment only</p>
               </div>
@@ -104,7 +104,7 @@ export function ContactUs() {
             <p className="text-gray-600 mb-8">
               Tell us about your project or challenge, and we'll get back to you with insights and next steps.
             </p>
-            
+
             <form className="space-y-6">
               <div className="grid gap-6 md:grid-cols-2">
                 <div>
@@ -209,7 +209,7 @@ export function ContactUs() {
 
               {/* Communication Consent Note */}
               <div className="text-sm text-gray-600 leading-relaxed">
-                <span className="font-semibold">Note:</span> By clicking "Send Message", you provide your express written consent for Revera Forte Auto to contact you via phone calls, text messages, and emails, using the information you have provided, even if your number is on a state or federal Do Not Call list. You may revoke your consent at any time by replying 'STOP' to any text message or by contacting us directly.
+                <span className="font-semibold">Note:</span> By clicking "Send Message", you provide your express written consent for Global SAM Soultions to contact you via phone calls, text messages, and emails, using the information you have provided, even if your number is on a state or federal Do Not Call list. You may revoke your consent at any time by replying 'STOP' to any text message or by contacting us directly.
               </div>
             </form>
           </div>
@@ -295,7 +295,7 @@ export function ContactUs() {
               Located in the heart of Sheridan, Wyoming, we're easily accessible and ready to meet in person when needed.
             </p>
           </div>
-          
+
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="grid gap-8 md:grid-cols-2 items-center">
               <div>
@@ -305,7 +305,7 @@ export function ContactUs() {
                     <MapPin className="h-6 w-6 text-blue-600 mr-3 mt-1" />
                     <div>
                       <p className="font-semibold text-gray-900">Address</p>
-                      <p className="text-gray-600">1309 Coffeen Ave Ste 1200<br />Sheridan, WY 82801<br />United States</p>
+                      <p className="text-gray-600">1309 Coffeen Avenue STE 20455<br />Sheridan, WY 82801<br />United States</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -317,13 +317,13 @@ export function ContactUs() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="rounded-xl overflow-hidden h-64">
-               <img
-                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
-                 alt="Modern office building"
-                 className="w-full h-full object-cover rounded-xl"
-               />
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+                  alt="Modern office building"
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
             </div>
           </div>

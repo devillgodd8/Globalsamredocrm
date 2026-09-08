@@ -29,7 +29,7 @@ export function Header() {
           <Link to="/" className="flex items-center space-x-2">
             <img
               src="/LOGO.png"
-              alt="Revera Forte Auto"
+              alt="Global SAM Soultions"
               className="h-16 w-auto"
             />
           </Link>

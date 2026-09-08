@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This project is a React-based web application for **Revera Forte Auto**, built with **Vite**, **TypeScript**, and **Tailwind CSS**.
+This project is a React-based web application for **Global SAM Soultions**, built with **Vite**, **TypeScript**, and **Tailwind CSS**.
 
 - **`.\src\components`**: Contains shared UI components like `.\src\components\Header.tsx` and `.\src\components\Footer.tsx`.
 - **`.\src\components\ui`**: Houses primitive UI components (e.g., `.\src\components\ui\navigation-menu.tsx`), following a pattern similar to shadcn/ui.
@@ -29,5 +29,5 @@ The project uses `npm` for package management and `vite` for the build pipeline.
 - **Media**: Use valid Unsplash URLs for stock photos where appropriate. Do not download images; link to them directly.
 
 ## Commit Guidelines
-- Commit messages should be concise and descriptive (e.g., `Initial commit: Revera Forte Auto website`).
+- Commit messages should be concise and descriptive (e.g., `Initial commit: Global SAM Soultions website`).
 - Ensure code passes `npm run lint` before committing.

@@ -15,14 +15,14 @@ export function AboutUs() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 text-5xl md:text-6xl font-bold text-white leading-tight">
               About
-              <span className="block text-blue-200">Revera Forte Auto</span>
+              <span className="block text-blue-200">Global SAM Soultions</span>
             </h1>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
               For over 12 years, we've been transforming organizations by understanding and influencing human behavior to achieve extraordinary results.
             </p>
           </div>
         </div>
-        
+
         {/* Decorative elements */}
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-blue-300/20 rounded-full blur-2xl"></div>
@@ -37,7 +37,7 @@ export function AboutUs() {
               alt="Team collaboration"
               className="mb-12 h-[500px] w-full rounded-2xl object-cover shadow-2xl"
             />
-            
+
             <div className="grid gap-12 md:grid-cols-2">
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
                 <div className="flex items-center mb-6">
@@ -48,7 +48,7 @@ export function AboutUs() {
                   To create exceptional experiences that inspire people to reach their full potential, driving extraordinary results for our clients and making a positive impact on the world through innovative solutions and human-centered design.
                 </p>
               </div>
-              
+
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-purple-100">
                 <div className="flex items-center mb-6">
                   <Lightbulb className="h-8 w-8 text-purple-600 mr-3" />
@@ -70,7 +70,7 @@ export function AboutUs() {
               These fundamental principles guide everything we do and shape how we work with our clients and each other.
             </p>
           </div>
-          
+
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
@@ -140,7 +140,7 @@ export function AboutUs() {
         </div>
 
         {/* Leadership Team */}
-        
+
 
         {/* Company Culture */}
         <div className="mb-20">
@@ -198,7 +198,7 @@ export function AboutUs() {
         {/* Why Choose Us */}
         <div className="mb-20 bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-12">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Organizations Choose Revera Forte Auto</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Organizations Choose Global SAM Soultions</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our unique combination of expertise, experience, and approach sets us apart in delivering transformational results.
             </p>
