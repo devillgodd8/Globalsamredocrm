@@ -112,8 +112,8 @@ export function Header() {
               Direct: +91 879 239 4870
             </a>
             <span className="text-slate-300">|</span>
-            <a href="mailto:info@globalsamsol.com" className="hover:text-slate-900 transition-colors">
-              info@globalsamsol.com
+            <a href="mailto:info@globalsamsolutions.com" className="hover:text-slate-900 transition-colors">
+              info@globalsamsolutions.com
             </a>
           </div>
         </div>
@@ -377,7 +377,7 @@ export function Header() {
             </Link>
             <div className="p-3 bg-slate-50 rounded-lg text-xs text-slate-600 font-mono space-y-1">
               <div>Phone: +91 879 239 4870</div>
-              <div>Email: info@globalsamsol.com</div>
+              <div>Email: info@globalsamsolutions.com</div>
               <div className="text-emerald-700 flex items-center gap-1 mt-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
                 SOC2 Ready &bull; ISO 27001

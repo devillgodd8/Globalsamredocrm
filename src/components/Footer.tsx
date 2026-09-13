@@ -163,8 +163,8 @@ export function Footer() {
                   Inquiries &amp; Briefings
                 </div>
                 <p className="pl-5 font-mono text-slate-800 font-semibold text-xs">
-                  <a href="mailto:info@globalsamsol.com" className="hover:text-blue-600 transition-colors">
-                    info@globalsamsol.com
+                  <a href="mailto:info@globalsamsolutions.com" className="hover:text-blue-600 transition-colors">
+                    info@globalsamsolutions.com
                   </a>
                 </p>
               </div>

@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { 
-  Building2, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
-  ShieldCheck, 
-  CheckCircle2, 
-  ArrowRight, 
+import {
+  Building2,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  ShieldCheck,
+  CheckCircle2,
+  ArrowRight,
   Lock,
   Calendar,
   Sparkles,
@@ -140,11 +140,10 @@ export function ContactUs() {
                           key={dept.id}
                           type="button"
                           onClick={() => setDepartment(dept.id as 'sales' | 'onboarding' | 'support' | 'partners')}
-                          className={`py-2.5 px-3 text-xs font-mono font-semibold rounded-lg border transition-all ${
-                            department === dept.id
+                          className={`py-2.5 px-3 text-xs font-mono font-semibold rounded-lg border transition-all ${department === dept.id
                               ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
                               : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
-                          }`}
+                            }`}
                         >
                           {dept.label}
                         </button>
@@ -322,8 +321,8 @@ export function ContactUs() {
                     </div>
                     <div>
                       <div className="text-[11px] text-slate-500 font-mono uppercase">Direct Briefing Email</div>
-                      <a href="mailto:info@globalsamsol.com" className="text-base font-mono font-bold text-slate-900 hover:text-blue-600 transition-colors">
-                        info@globalsamsol.com
+                      <a href="mailto:info@globalsamsolutions.com" className="text-base font-mono font-bold text-slate-900 hover:text-blue-600 transition-colors">
+                        info@globalsamsolutions.com
                       </a>
                     </div>
                   </div>
@@ -393,9 +392,9 @@ export function ContactUs() {
 
                 <div className="pt-2">
                   <div className="rounded-xl overflow-hidden border border-slate-200">
-                    <img 
-                      src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" 
-                      alt="Global SAM Headquarters Facility" 
+                    <img
+                      src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
+                      alt="Global SAM Headquarters Facility"
                       className="w-full h-32 object-cover object-center"
                     />
                   </div>
