@@ -1,306 +1,247 @@
-import { ArrowLeft, Calendar, Users, Award, MapPin, Clock, Star, Lightbulb, CheckCircle, Camera, Mic, Settings } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { 
+  Calendar, 
+  ArrowLeft, 
+  ArrowRight, 
+  Users, 
+  BarChart3,
+  QrCode,
+  CheckCircle2,
+  Sparkles
+} from 'lucide-react';
 
 export function BusinessEvents() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-purple-600 via-pink-600 to-red-500">
-        <img
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1600"
-          alt="Business conference event"
-          className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-40"
-        />
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 py-20 relative z-10">
-          <Link to="/solutions" className="mb-8 inline-flex items-center text-white/90 hover:text-white transition-colors duration-200">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Solutions
-          </Link>
-          
-          <div className="max-w-4xl">
-            <h1 className="mb-6 text-5xl md:text-6xl font-bold text-white leading-tight">
-              Exceptional
-              <span className="block text-pink-200">Business Events</span>
-            </h1>
-            <p className="text-xl text-pink-100 max-w-2xl leading-relaxed">
-              Create memorable experiences that inspire, connect, and drive business success through expertly crafted events.
-            </p>
-          </div>
-        </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-pink-300/20 rounded-full blur-2xl"></div>
-      </div>
+    <div className="min-h-screen bg-slate-50 text-slate-900">
+      {/* 1. ARCHITECTURAL HERO WITH IMAGERY */}
+      <section className="bg-white text-slate-900 border-b border-slate-200 relative overflow-hidden py-16 lg:py-24">
+        <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none" />
 
-      <div className="container mx-auto px-4 py-16">
-        {/* Event Impact Section */}
-        <div className="mb-20">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Events That Make an Impact</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From intimate meetings to large-scale conferences, we create experiences that engage your audience and achieve your business objectives.
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-3">
-            {[
-              {
-                icon: Users,
-                title: "Meaningful Connections",
-                description: "Foster valuable networking and relationship building that extends beyond the event.",
-                color: "bg-blue-500"
-              },
-              {
-                icon: Lightbulb,
-                title: "Inspire Innovation",
-                description: "Create environments that spark creativity and drive breakthrough thinking.",
-                color: "bg-purple-500"
-              },
-              {
-                icon: Star,
-                title: "Memorable Experiences",
-                description: "Deliver unforgettable moments that strengthen brand loyalty and engagement.",
-                color: "bg-pink-500"
-              }
-            ].map((impact, index) => (
-              <div key={index} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 ${impact.color} rounded-xl text-white mb-6`}>
-                    <impact.icon className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{impact.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{impact.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Event Services Section */}
-        <div className="mb-20">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Comprehensive Event Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              End-to-end event management that takes care of every detail, so you can focus on your objectives.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                icon: Calendar,
-                title: "Strategic Planning",
-                description: "Comprehensive event strategy aligned with your business goals and target audience."
-              },
-              {
-                icon: MapPin,
-                title: "Venue Selection",
-                description: "Perfect venue sourcing and management for any event size or format."
-              },
-              {
-                icon: Settings,
-                title: "Technology Solutions",
-                description: "Cutting-edge AV, live streaming, and interactive event technology."
-              },
-              {
-                icon: Users,
-                title: "Registration Management",
-                description: "Seamless attendee registration, communication, and engagement platforms."
-              },
-              {
-                icon: Mic,
-                title: "Content Development",
-                description: "Engaging speakers, presentations, and interactive session design."
-              },
-              {
-                icon: Camera,
-                title: "Production & Design",
-                description: "Creative event design, branding, and professional production services."
-              }
-            ].map((service, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg text-purple-600 mb-4">
-                  <service.icon className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Event Types Section */}
-        <div className="mb-20 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-12 text-white">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-6">Event Types We Excel At</h2>
-            <p className="text-xl text-purple-100 max-w-2xl mx-auto">
-              Whatever your event needs, we have the expertise to deliver exceptional results.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Corporate Conferences",
-                description: "Large-scale gatherings that educate, inspire, and align your organization.",
-                attendees: "500-5000+"
-              },
-              {
-                title: "Executive Meetings",
-                description: "Intimate, high-level meetings focused on strategic decision-making.",
-                attendees: "10-50"
-              },
-              {
-                title: "Product Launches",
-                description: "High-impact events that generate buzz and drive market adoption.",
-                attendees: "100-1000"
-              },
-              {
-                title: "Sales Kickoffs",
-                description: "Motivational events that energize teams and drive performance.",
-                attendees: "50-500"
-              },
-              {
-                title: "Award Ceremonies",
-                description: "Prestigious celebrations that recognize achievements and build culture.",
-                attendees: "100-1000"
-              },
-              {
-                title: "Trade Shows",
-                description: "Industry exhibitions that showcase products and generate leads.",
-                attendees: "1000-10000+"
-              }
-            ].map((eventType, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                <h3 className="text-xl font-semibold text-white mb-3">{eventType.title}</h3>
-                <p className="text-purple-100 mb-4">{eventType.description}</p>
-                <div className="text-sm text-pink-200">
-                  <Clock className="inline h-4 w-4 mr-1" />
-                  Ideal for {eventType.attendees} attendees
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Success Stories Section */}
-        <div className="mb-20">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Event Success Stories</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real results from events that exceeded expectations and delivered measurable business impact.
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {[
-              {
-                title: "Global Tech Conference",
-                metric: "95%",
-                label: "Attendee Satisfaction",
-                description: "Delivered a hybrid conference for 3,000+ attendees across 15 countries with seamless technology integration and engaging content.",
-                highlights: ["Zero technical issues", "15% increase in leads", "98% would attend again"]
-              },
-              {
-                title: "Executive Leadership Summit",
-                metric: "40%",
-                label: "Increased Engagement",
-                description: "Created an intimate, high-value experience for C-suite executives that strengthened strategic partnerships and drove key initiatives.",
-                highlights: ["100% executive attendance", "12 new partnerships", "Strategic roadmap alignment"]
-              }
-            ].map((story, index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
-                <div className="flex items-center mb-6">
-                  <div className="text-4xl font-bold text-purple-600 mr-4">{story.metric}</div>
-                  <div>
-                    <div className="text-lg font-semibold text-gray-900">{story.label}</div>
-                    <div className="text-gray-600">{story.title}</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-6">{story.description}</p>
-                <div className="space-y-2">
-                  {story.highlights.map((highlight, idx) => (
-                    <div key={idx} className="flex items-center text-sm text-gray-700">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      {highlight}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Process Section */}
-        <div className="mb-20">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Event Process</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A proven methodology that ensures every event exceeds expectations and delivers results.
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-4">
-            {[
-              {
-                step: "01",
-                title: "Discovery & Strategy",
-                description: "Understanding your objectives, audience, and success metrics."
-              },
-              {
-                step: "02",
-                title: "Design & Planning",
-                description: "Creating the event experience and detailed execution plan."
-              },
-              {
-                step: "03",
-                title: "Execution & Management",
-                description: "Flawless event delivery with real-time monitoring and support."
-              },
-              {
-                step: "04",
-                title: "Analysis & Optimization",
-                description: "Post-event analysis and insights for continuous improvement."
-              }
-            ].map((process, index) => (
-              <div key={index} className="relative">
-                <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-white text-xl font-bold mb-6">
-                    {process.step}
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">{process.title}</h3>
-                  <p className="text-gray-600">{process.description}</p>
-                </div>
-                {index < 3 && (
-                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-purple-300 to-pink-300 transform -translate-y-1/2"></div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center bg-gray-50 rounded-3xl p-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Create Your Next Exceptional Event?</h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can bring your vision to life and create an unforgettable experience for your audience.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-purple-600 text-white font-semibold rounded-xl hover:bg-purple-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
-            >
-              Start Planning Today
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="mb-6 flex items-center gap-2 text-xs font-mono text-slate-500">
+            <Link to="/solutions" className="hover:text-blue-700 transition-colors flex items-center gap-1">
+              <ArrowLeft className="w-3.5 h-3.5" /> All Solutions
             </Link>
-            <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-purple-600 text-purple-600 font-semibold rounded-xl hover:bg-purple-50 transition-colors duration-200">
-              View Event Portfolio
-            </button>
+            <span>/</span>
+            <span className="text-blue-700 font-semibold">Strategic Business Events</span>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs font-mono uppercase tracking-widest text-blue-700 mb-6">
+                <Calendar className="w-3.5 h-3.5 text-blue-600" />
+                Executive Experiential Tech
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+                Strategic Business Events &amp; Automotive Summits.
+              </h1>
+
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mb-8">
+                Orchestrate high-stakes dealer launch conventions, OEM franchise roundtables, and VIP conclaves with bespoke digital concierge software, RFID attendee telemetry, and commercial lead tracking.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-all font-mono shadow-md"
+                >
+                  <span>Plan Executive Conclave</span>
+                  <ArrowRight className="w-4 h-4 text-amber-300" />
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-all font-mono shadow-sm"
+                >
+                  View Conclave Case Studies
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5 hidden lg:block">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1000"
+                  alt="Automotive Leadership Summit Stage"
+                  className="w-full h-80 object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 text-xs font-mono text-white flex items-center justify-between">
+                  <span>Executive Conclave Tech</span>
+                  <span className="text-emerald-400 font-bold">500+ Summits</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* 2. STATS BAR WITH VIBRANT HIGHLIGHTS */}
+      <section className="bg-slate-50 text-slate-900 border-b border-slate-200 py-10 font-mono">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="border-l-4 border-amber-500 pl-4 bg-white p-4 rounded-r-xl border border-slate-200 shadow-sm">
+              <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">500+</div>
+              <div className="text-xs text-slate-600 uppercase tracking-wider mt-1 font-semibold">Automotive Summits</div>
+            </div>
+            <div className="border-l-4 border-blue-600 pl-4 bg-white p-4 rounded-r-xl border border-slate-200 shadow-sm">
+              <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">&lt; 45s</div>
+              <div className="text-xs text-slate-600 uppercase tracking-wider mt-1 font-semibold">VIP Onboarding Flow</div>
+            </div>
+            <div className="border-l-4 border-emerald-500 pl-4 bg-white p-4 rounded-r-xl border border-slate-200 shadow-sm">
+              <div className="text-2xl sm:text-3xl font-extrabold text-emerald-600">98%</div>
+              <div className="text-xs text-slate-600 uppercase tracking-wider mt-1 font-semibold">Check-In Rate</div>
+            </div>
+            <div className="border-l-4 border-amber-500 pl-4 bg-white p-4 rounded-r-xl border border-slate-200 shadow-sm">
+              <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">100%</div>
+              <div className="text-xs text-slate-600 uppercase tracking-wider mt-1 font-semibold">Attribution Capture</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. EVENT WORKFLOW */}
+      <section className="py-16 bg-white border-b border-slate-200">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mb-12">
+            <span className="text-xs font-mono uppercase tracking-widest text-blue-700 font-bold flex items-center gap-1.5">
+              <Sparkles className="w-3.5 h-3.5" />
+              Operational Precision
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+              The Four Stages of Conclave Orchestration
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            {[
+              {
+                step: '01',
+                title: 'VIP Digital Concierge',
+                desc: 'Encrypted registration links, travel manifest sync, dietary profiling, and personalized mobile agenda dispatch.'
+              },
+              {
+                step: '02',
+                title: 'RFID & Fast Check-In',
+                desc: 'Touchless physical badge issuance in under 45 seconds with instant SMS welcome alerts and pavilion mapping.'
+              },
+              {
+                step: '03',
+                title: 'Real-Time Session Telemetry',
+                desc: 'Track dealer principal attendance across technical keynotes, vehicle reveal staging, and breakout rooms.'
+              },
+              {
+                step: '04',
+                title: 'Commercial Deal Attribution',
+                desc: 'Directly attribute vehicle wholesale orders and franchise commitments generated during executive roundtables.'
+              },
+            ].map((s, idx) => (
+              <div 
+                key={idx}
+                className="bg-slate-50 border border-slate-200 rounded-2xl p-6 relative flex flex-col justify-between hover:shadow-md transition-shadow"
+              >
+                <div>
+                  <div className="text-3xl font-extrabold font-mono text-blue-600 mb-3">
+                    {s.step}
+                  </div>
+                  <h3 className="text-base font-bold text-slate-900 mb-2">
+                    {s.title}
+                  </h3>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    {s.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. EVENT CAPABILITY MODULES */}
+      <section className="py-20 bg-slate-50 border-b border-slate-200">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mb-14">
+            <span className="text-xs font-mono uppercase tracking-widest text-blue-700 font-bold">
+              Event Technologies
+            </span>
+            <h2 className="text-3xl font-extrabold text-slate-900 mt-2">
+              White-Glove Tech for High-Stakes Summits.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white border border-slate-200 rounded-2xl p-8 space-y-4 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center">
+                <QrCode className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-slate-900">
+                Contactless Credentialing &amp; RFID
+              </h3>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Provide custom encrypted badges that allow seamless entry into high-security OEM design reveals and dealer principal private dinners.
+              </p>
+              <div className="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1.5 font-medium">
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Instant on-demand badge printing</div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Security zone clearance gates</div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Real-time crowd density heatmaps</div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-slate-200 rounded-2xl p-8 space-y-4 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center">
+                <Users className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-slate-900">
+                Meeting Orchestrator &amp; Concierge
+              </h3>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Coordinate hundreds of 1-on-1 executive meetings between factory leadership and franchise owners with automated room scheduling.
+              </p>
+              <div className="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1.5 font-medium">
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Automated calendar matchmaking</div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> SMS concierge meeting reminders</div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Private suite access control</div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-slate-200 rounded-2xl p-8 space-y-4 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                <BarChart3 className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-slate-900">
+                Commercial ROI &amp; Lead Attribution
+              </h3>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Prove the bottom-line ROI of your corporate summit by tracking wholesale order volume and franchise contracts signed during the conclave.
+              </p>
+              <div className="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1.5 font-medium">
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Live order commitment tally</div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Executive briefing post-event reports</div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> CRM lead export pipelines</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. CALL TO ACTION */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-4 text-center max-w-2xl">
+          <h3 className="text-2xl font-bold text-slate-900 mb-3">
+            Plan Your Next Automotive Conclave
+          </h3>
+          <p className="text-xs sm:text-sm text-slate-600 mb-6 leading-relaxed">
+            From single-region dealer conferences to 5,000-attendee global product reveals, our event engineering team delivers absolute operational certainty.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-all font-mono shadow-md"
+          >
+            <span>Consult with Event Tech Specialists</span>
+            <ArrowRight className="w-4 h-4 text-amber-300" />
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
