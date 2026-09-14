@@ -4,6 +4,7 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { AboutUs } from './pages/AboutUs';
 import { ContactUs } from './pages/ContactUs';
+import { Profile } from './pages/Profile';
 import { SolutionsHub } from './pages/solutions/SolutionsHub';
 import { IndustriesHub } from './pages/industries/IndustriesHub';
 import { ChannelPartnerEngagement } from './pages/solutions/ChannelPartnerEngagement';
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="/contact" element={<ContactUs />} />
             
             {/* Solutions Routes */}

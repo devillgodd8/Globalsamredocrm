@@ -116,8 +116,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-slate-600 hover:text-blue-600 font-medium transition-colors">
-                  Leadership &amp; Governance
+                <Link to="/profile" className="text-slate-600 hover:text-blue-600 font-medium transition-colors">
+                  Founder &amp; CEO (Syed Abdul Matheen)
                 </Link>
               </li>
               <li>

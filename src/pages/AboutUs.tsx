@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { 
-  Building2, 
-  ShieldCheck, 
-  Cpu, 
-  Globe, 
-  MapPin, 
-  ArrowRight, 
+import {
+  Building2,
+  ShieldCheck,
+  Cpu,
+  Globe,
+  MapPin,
+  ArrowRight,
   Layers,
   Sparkles
 } from 'lucide-react';
@@ -62,7 +62,7 @@ const offices = [
     country: 'United States',
     role: 'Corporate Headquarters & Legal Governance',
     address: '1309 Coffeen Avenue, STE 20455, Sheridan, WY 82801',
-    contact: '+1 (361) 203-9170',
+    contact: '+91 879 239 4870',
     status: 'Corporate Hub',
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800'
   },
@@ -149,7 +149,7 @@ export function AboutUs() {
                 The Automotive Retailing Stack Was Built in the 1990s. We Are Rebuilding It for Velocity.
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                For decades, automotive dealer groups have suffered under sluggish, green-screen legacy Dealer Management Systems (DMS) that trap customer data in proprietary silos. 
+                For decades, automotive dealer groups have suffered under sluggish, green-screen legacy Dealer Management Systems (DMS) that trap customer data in proprietary silos.
               </p>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Global SAM Solutions bridges this chasm by deploying an intelligent operating layer on top of existing enterprise systems — enabling instant digital desking, automated partner rebate calculations, and seamless service retention workflows without requiring an entire core system replacement.
@@ -230,7 +230,7 @@ export function AboutUs() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {principles.map((p, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
               >
@@ -265,7 +265,7 @@ export function AboutUs() {
 
           <div className="space-y-4 max-w-4xl">
             {milestones.map((m, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="grid grid-cols-1 sm:grid-cols-12 gap-4 p-6 rounded-xl bg-slate-50 border border-slate-200 items-center hover:bg-blue-50/40 transition-colors"
               >
@@ -300,7 +300,7 @@ export function AboutUs() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {offices.map((office, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
               >
@@ -342,7 +342,14 @@ export function AboutUs() {
             ))}
           </div>
 
-          <div className="mt-12 text-center pt-8 border-t border-slate-200">
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-4 pt-8 border-t border-slate-200">
+            <Link
+              to="/profile"
+              className="inline-flex items-center gap-2 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-800 hover:text-slate-900 bg-white hover:bg-slate-50 border border-slate-300 rounded-lg transition-all font-mono shadow-sm"
+            >
+              <span>Meet Founder &amp; CEO (Syed Abdul Matheen)</span>
+              <ArrowRight className="w-4 h-4 text-blue-600" />
+            </Link>
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-all font-mono shadow-md"
